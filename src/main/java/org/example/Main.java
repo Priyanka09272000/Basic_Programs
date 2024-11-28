@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.lang.Math;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("-----------------------------------------------Basic Programs----------------------------------------------");
+        System.out.println("-----------------------------------------------*Basic Programs*----------------------------------------------");
         //Swape two numbers
         System.out.println("=============Program to swap two numbers============");
         Scanner scanner = new Scanner(System.in);
