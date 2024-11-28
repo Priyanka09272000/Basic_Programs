@@ -4,7 +4,7 @@ import java.lang.Math;
 public class Main {
     public static void main(String[] args) {
         //Swape two numbers
-        System.out.println("==========Program to swap two numbers==========");
+        System.out.println("=============Program to swap two numbers============");
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt();
         int b = scanner.nextInt();
