@@ -26,7 +26,8 @@ public class Main {
         System.out.println(a1);
         System.out.println(a2);
 
-        for(int i = 2; i < Number; i++) {
+        for(int i = 2; i < Number; i++)
+        {
             System.out.println(a1 + a2);
             result = a1 + a2;
             a1 = a2;
@@ -39,7 +40,8 @@ public class Main {
         int num = scanner.nextInt();
         int sum=0, remainder, temp1;
         temp1 = num;
-        while(num != 0){
+        while(num != 0)
+        {
             remainder = num%10;
             sum = sum * 10 + remainder;
             num = num/10;
@@ -56,16 +58,20 @@ public class Main {
         // change flag to 1 for non-prime number
         if (nump == 0 || nump == 1)
             flag = 1;
-        for (int i = 2; i <= nump / 2; ++i) {
-            if(nump % i == 0) {
+        for (int i = 2; i <= nump / 2; ++i) 
+        {
+            if(nump % i == 0) 
+            {
                 flag=1;
                 break;
             }
         }
-        if(flag == 1) {
+        if(flag == 1) 
+        {
             System.out.println("Not a Prime Number : ");
         }
-        else {
+        else 
+        {
             System.out.println("Congratulations! Prime number : ");
         }
 
@@ -75,13 +81,16 @@ public class Main {
         aa = scanner.nextInt();
         bb = scanner.nextInt();
         cc = scanner.nextInt();
-        if(aa > bb && aa > cc){
+        if(aa > bb && aa > cc)
+        {
             System.out.println("aa is largest ");
         }
-        else if(bb > aa && bb > cc){
+        else if(bb > aa && bb > cc)
+        {
             System.out.println("bb is largest ");
         }
-        else {
+        else 
+        {
             System.out.println("cc is largest ");
         }
 
@@ -106,7 +115,8 @@ public class Main {
         // Initialize factorial to 1
         int factorial = 1;
         // Compute factorial using a loop
-        for (int i = aq; i >= 1; i--) {
+        for (int i = aq; i >= 1; i--) 
+        {
             factorial = factorial * i;
         }
         // Output the result
@@ -118,19 +128,23 @@ public class Main {
         System.out.println("Enter a number: ");
         int num11 = scanner.nextInt();
         int count=0,temp19=num11,rem,sum1=0,temp2=num11;
-        while(temp19 != 0){
+        while(temp19 != 0)
+        {
             temp19 = temp19 / 10;
             count++;
         }
-        while(num11 != 0){
+        while(num11 != 0)
+        {
             rem = num11 % 10;
             sum1 = (int)(sum1 + Math.pow(rem, count));
             num11 = num11 / 10;
         }
-        if(sum1 == temp2){
+        if(sum1 == temp2)
+        {
             System.out.println("The number is an Armstrong number.");
         }
-        else{
+        else
+        {
             System.out.println("The number is not an Armstrong number.");
         }
         System.out.println("Power Calculation : ");
@@ -138,7 +152,8 @@ public class Main {
         int num12 = scanner.nextInt(), power = 1;
         System.out.println("Enter Power : ");
         int num13 = scanner.nextInt();
-        for(int j=1;j<=num13;j++){
+        for(int j=1;j<=num13;j++)
+        {
             power = power * num12;
         }
         System.out.println("After power calculation : " + power);
@@ -149,11 +164,14 @@ public class Main {
         int t;
         int num10 = scanner.nextInt();
         t = num10 - 1;
-        for(int i=1;i<=num10;i++){
-            for(int j=t;j>0;j--){
+        for(int i=1;i<=num10;i++)
+        {
+            for(int j=t;j>0;j--)
+            {
                 System.out.print(" ");
             }
-            for(int k = 1;k <= i ;k++){
+            for(int k = 1;k <= i ;k++)
+            {
                 System.out.print("* ");
             }
             t--;
@@ -164,8 +182,10 @@ public class Main {
         System.out.println("==================Pattern Printing (Number increasing pyramid)===================");
         System.out.println("Enter a number: ");
         int nn = scanner.nextInt();
-        for(int i = 1; i <= nn; i++){
-            for(int j = 1; j <= i; j++){
+        for(int i = 1; i <= nn; i++)
+        {
+            for(int j = 1; j <= i; j++)
+            {
                 System.out.print(j + " ");
             }
             System.out.println();
@@ -175,8 +195,10 @@ public class Main {
         System.out.println("======================Pattern Printing (Number increasing reverse pyramid)=========================");
         System.out.println("Enter a number: ");
         int nnn = scanner.nextInt(),te=1;
-        for(int i = 1; i <= nnn; i++){
-            for(int j = i; j <= nnn; j++){
+        for(int i = 1; i <= nnn; i++)
+        {
+            for(int j = i; j <= nnn; j++)
+            {
                 System.out.print(te + " ");
                 te++;
             }
@@ -188,8 +210,10 @@ public class Main {
         System.out.println("=======================Print Square fill pattern=========================");
         System.out.println("Enter a number: ");
         int nn0 = scanner.nextInt();
-        for(int i = 1; i <= nn0; i++){
-            for(int j = 1; j <= nn0; j++){
+        for(int i = 1; i <= nn0; i++)
+        {
+            for(int j = 1; j <= nn0; j++)
+            {
                 System.out.print("* ");
             }
             System.out.println();
@@ -200,15 +224,20 @@ public class Main {
         System.out.println("Enter a number: ");
         int n0n = scanner.nextInt(),t00;
         t00 = n0n-1;
-        for(int i = 1; i <= n0n; i++){
-            for(int j = 1; j <= t00; j++){
+        for(int i = 1; i <= n0n; i++)
+        {
+            for(int j = 1; j <= t00; j++)
+            {
                 System.out.print(" ");
             }
-            for(int ji = 1; ji <= i; ji++){
+            for(int ji = 1; ji <= i; ji++)
+            {
                 System.out.print(i + " ");
             }
             t00--;
             System.out.println();
         }
+
+        System.out.println("----------------------------End of the program---------------------------");
     }
 }
